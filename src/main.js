@@ -1,7 +1,7 @@
 import { initPathRouter } from "@bjornlu/svelte-router";
 
 import App from "./App.svelte";
-import Home from "./Home.svelte";
+import Home from "./pages/home/Home.svelte";
 
 initPathRouter([
 	{ path: "/", component: Home }
