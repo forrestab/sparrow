@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@bjornlu/svelte-router": "^0.3.2",
+    "date-fns": "^2.16.1",
     "sirv-cli": "^1.0.0"
   }
 }

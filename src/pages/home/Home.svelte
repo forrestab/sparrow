@@ -1,7 +1,7 @@
 <script>
     import Children from "./Children.svelte";
-    import Transactions from "./Transactions.svelte";
+    import TransactionHistory from "./transaction-history/TransactionHistory.svelte";
 </script>
 
 <Children />
-<Transactions />
+<TransactionHistory />
