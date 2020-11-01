@@ -4,7 +4,7 @@
     import Transaction from "./Transaction.svelte";
 
     export let header;
-    export let transactions;
+    export let transactions = [];
 </script>
 
 <h3>{format(new Date(header), "yyyy/MM/dd")}</h3>
@@ -12,7 +12,7 @@
     {#each transactions as transaction}
         <li>
             <Transaction 
-                name={transaction.child.name}
+                name={transaction.kid.name}
                 activity={transaction.description}
                 value={transaction.value} 
             />
