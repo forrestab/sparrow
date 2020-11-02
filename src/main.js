@@ -1,10 +1,12 @@
-import { initPathRouter } from "@bjornlu/svelte-router";
+import { initHashRouter } from "@bjornlu/svelte-router";
 
 import App from "./App.svelte";
 import Home from "./pages/home/Home.svelte";
+import Settings from "./pages/settings/Settings.svelte";
 
-initPathRouter([
-	{ path: "/", component: Home }
+initHashRouter([
+	{ path: "/settings", component: Settings },
+	{ path: "/", component: Home }	
 ])
 
 const app = new App({
