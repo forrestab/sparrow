@@ -5,6 +5,7 @@
 <main>
 	<nav>
 		<Link to="/">Home</Link>
+		<Link to="/settings">Settings</Link>
 	</nav>
 	<RouterView />
 </main>
