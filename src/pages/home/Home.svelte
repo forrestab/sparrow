@@ -2,7 +2,7 @@
     import add from "date-fns/add";
 
     import KidList from "./kid-list/KidList.svelte";
-    import TransactionHistory from "./transaction-history/TransactionHistory.svelte";
+    import TransactionGroup from "./transaction-groups/TransactionGroups.svelte";
 
     let newTransaction = (id, date, description, value, type = "credit") => 
         ({ id, date, description, type, value });
@@ -51,4 +51,6 @@
 </script>
 
 <KidList {kids} />
-<TransactionHistory {groupedTransactions} />
+
+<h2>Recent Transactions</h2>
+<TransactionGroup {groupedTransactions} />
