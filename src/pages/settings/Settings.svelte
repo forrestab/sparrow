@@ -1,5 +1,9 @@
 <script>
-
+    let activities = [
+        { id: 1, name: "Feed animals", value: .5 },
+        { id: 2, name: "Fold laundry", value: 1.5 },
+        { id: 3, name: "Dry dishes", value: 1 }
+    ];
 </script>
 
 <h1>Settings</h1>
@@ -18,23 +22,16 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>Feed animals</td>
-            <td>.5</td>
-            <td>
-                <button>Edit</button>
-                &middot;
-                <button>Delete</button>
-            </td>
-        </tr>
-        <tr>
-            <td>Fold clothes</td>
-            <td>1.5</td>
-            <td>
-                <button>Edit</button>
-                &middot;
-                <button>Delete</button>
-            </td>
-        </tr>
+        {#each activities as activity}
+            <tr>
+                <td>{activity.name}</td>
+                <td>{activity.value}</td>
+                <td>
+                    <button>Edit</button>
+                    &middot;
+                    <button>Delete</button>
+                </td>
+            </tr>
+        {/each}
     </tbody>
 </table>
